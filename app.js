@@ -22,7 +22,7 @@ const app = express();
 // Global Application Middleware
 const corsOptions = {
     origin: "*",
-    credentials: true,
+    credentials: false,
 };
 app.use(cors(corsOptions));
 app.use(express.json({ limit: Max_JSON_SIZE }));
